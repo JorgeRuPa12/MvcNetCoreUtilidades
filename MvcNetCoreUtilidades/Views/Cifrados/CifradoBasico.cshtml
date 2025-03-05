@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "CifradoBasico";
+}
+
+<h1>CifradoBasico</h1>
+
+<form method="post">
+    <label>Contenido a cifrar</label>
+    <input type="text" class="form-control" name="contenido"/>
+    <label>Resultado</label>
+    <input type="text" class="form-control" name="resultado" value="@ViewData["TEXTOCIFRADO"]" />
+    <button name="accion" value="cifrar" class="btn btn-outline-danger mt-3 mr-3">
+        Cifrar
+    </button>
+    <button name="accion" value="comparar" class="btn btn-outline-primary mt-3">
+        Comparar
+    </button>
+</form>
+
+<h2>@ViewData["MENSAJE"]</h2>

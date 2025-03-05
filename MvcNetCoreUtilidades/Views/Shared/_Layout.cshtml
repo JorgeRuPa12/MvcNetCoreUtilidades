@@ -26,6 +26,25 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Caching" asp-action="Index">Caching</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="UploadFiles" asp-action="SubirFichero">Subir Fichero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Mails" asp-action="SendMail">Enviar Mail</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Coches" asp-action="Index">Coches</a>
+                        </li>
+                        @await Component.InvokeAsync("MenuCoches")
+                        <ul class="dropdown">
+                            <li class="dropdown-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cifrados" asp-action="CifradoBasico">Cifrado Basico</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Cifrados" asp-action="CifradoEficiente">Cifrado Eficiente</a>
+                            </li>
+                        </ul>
+                        <partial name="_MenuUsuario" />
                     </ul>
                 </div>
             </div>

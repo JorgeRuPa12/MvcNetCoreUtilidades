@@ -11,4 +11,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\facturas\" />
+    <Folder Include="wwwroot\temp\" />
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,15 @@
+﻿@section Scripts {
+    <script>
+        $(document).ready(function(){
+            $("#botonloadcoches").click(function(){
+                $("#containercoches").load("/Coches/_CochesPartial")
+            })
+        })
+    </script>
+}
+
+<h1>Index de Ajax Coches</h1>
+
+<button id="botonloadcoches" class="btn btn-outline-info">Cargar Coches</button>
+
+<div id="containercoches"></div>

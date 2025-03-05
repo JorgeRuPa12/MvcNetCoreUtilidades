@@ -1,0 +1,22 @@
+﻿@model List<Coche>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Coche coche in Model){
+            <tr>
+                <td>@coche.IdCoches</td>
+                <td>@coche.Marca</td>
+                <td>@coche.Modelo</td>
+                <td><img src="@coche.Imagen" style="height:300px"/></td>
+            </tr>
+        }
+    </tbody>
+</table>
